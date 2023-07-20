@@ -1,0 +1,57 @@
+.timer {
+  height: 400px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .timer {
+    height: 100vh;
+    flex: 4;
+  }
+}
+.main-container {
+  position: relative;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50vh;
+  border: none;
+  box-shadow: 0 0 5px 1px black;
+  font-size: 24px;
+}
+
+.btn.btn--start {
+  color: #00a6de;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
+
+.btn.btn--stop {
+  color: #0080ae;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
+
+.btn.btn--reset {
+  color: #8d7a6a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -40%);
+}
+
+.btn.btn--lap {
+  color: #7080c4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}

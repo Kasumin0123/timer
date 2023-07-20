@@ -1,0 +1,60 @@
+.lap {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+@media screen and (min-width: 1200px) {
+  .lap {
+    flex: 6;
+    margin: 0;
+    max-width: none;
+  }
+}
+
+.vertical-table {
+  border-width: 1px 0px 1px 1px;
+  border-color: #0080ae;
+  border-style: solid;
+  overflow-x: auto;
+}
+.vertical-table__inner {
+  text-align: center;
+  table-layout: fixed;
+  min-width: 100%;
+}
+.vertical-table__header-row {
+  color: #ddd;
+  border-bottom: 1px solid #0080ae;
+  background-color: #0080ae;
+}
+.vertical-table__body-row {
+  border-bottom: 1px solid #0080ae;
+}
+.vertical-table__body-row:last-child {
+  border-bottom-width: 0;
+}
+.vertical-table__header {
+  padding: 15px;
+  border-right: 1px solid #0080ae;
+  font-weight: bold;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.vertical-table__text {
+  padding: 15px;
+  border-right: 1px solid #0080ae;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  .vertical-table {
+    overflow-x: visible;
+  }
+  .vertical-table__inner {
+    width: 100%;
+  }
+  .vertical-table__header,
+  .vertical-table__text {
+    white-space: wrap;
+  }
+}

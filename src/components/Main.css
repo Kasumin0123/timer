@@ -1,0 +1,55 @@
+.circle-container {
+  height: 320px;
+  width: 320px;
+  border-radius: 50vh;
+  background-color: #bba0c5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cquarter-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 160px solid transparent;
+  border-top: 160px solid #3659a7;
+  border-radius: 100%;
+  animation: kf-spinner 1s linear infinite;
+  animation-play-state: paused;
+}
+
+.cquarter-circle.inview {
+  animation-play-state: running;
+}
+
+.inside-circle {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50vh;
+  background-color: #fff;
+  transform: scale(0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+@keyframes kf-spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
